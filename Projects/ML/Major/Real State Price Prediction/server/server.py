@@ -1,11 +1,10 @@
 from flask import Flask, request, jsonify
+#from waitress import serve
 import util
 import json
-
-# %run util.ipynb
+#%run util.ipynb
 
 app = Flask(__name__)
-
 
 @app.route('/hi')
 def hi():
@@ -22,7 +21,7 @@ def locations():
     return response
 
 
-@app.route('/predict_home_price', methods=['POST'])
+@app.route('/predict_home_price')
 def predict_home_price():
     total_sqft = float(request.form['total_sqft'])
     location = request.form['location']
@@ -43,3 +42,4 @@ def predict_home_price():
 if __name__ == '__main__':
     print('python flask started')
     app.run()
+    #serve(app, host='0.0.0.0', port=50100, threads=1)
