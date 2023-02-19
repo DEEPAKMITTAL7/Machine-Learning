@@ -2,6 +2,9 @@ import json
 import pickle
 import sklearn
 import numpy as np
+import warnings
+
+warnings.filterwarnings('ignore')
 
 __locations = None
 __area = None
@@ -52,6 +55,8 @@ def load_saved_artifacts():
 
 if __name__ == '__main__':
     load_saved_artifacts()
+    if None not in __locations:
+        print ("ok")
     #print(locations())
     #print(areas())
 
