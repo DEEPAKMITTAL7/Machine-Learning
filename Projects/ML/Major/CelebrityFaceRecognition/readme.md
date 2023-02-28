@@ -27,8 +27,9 @@ Key Highlights of flow,
 2. Manual data cleaning
 3. Wavelet transformed images, feature engineering
 4. Training, hypertune
-5. saveing the model.
+5. saving the model.
 6. flask server
 7. ui
+8. aws
 
 
