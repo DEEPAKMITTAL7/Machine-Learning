@@ -1,0 +1,16 @@
+The dataset has been taken from Kaggle. I would ike to thank Kaggle for providing the datasets to all the data science learners for free.
+
+This dataset has some limitaions over features to safeguard for confidentiality issues with user's information.
+
+Features V1, V2, … V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'
+
+Let's quickly analyze the data and try to observe the pattern/methodology behind the frauds.
+
+Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset.
+
+Feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-sensitive learning.
+
+Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
+
+Amount less than or equal to zero is not treated as a fraud.
+
